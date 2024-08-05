@@ -17,10 +17,25 @@ CLIENT_SECRET = secrets["secret"]
 ASTRA_DB_KEYSPACE = ""
 OPENAI_API_KEY = ""
 
+<<<<<<< HEAD
+=======
+'''
+git config --global user.name "mcfatbeard57"
+
+git config --global user.email "harshgupta57100@gmail.com"
+'''
+
+
+>>>>>>> d53f94c (Commit)
 auth_provider = PlainTextAuthProvider(CLIENT_ID, CLIENT_SECRET)
 cluster = Cluster(cloud=cloud_config, auth_provider=auth_provider)
 session = cluster.connect()
 
+<<<<<<< HEAD
+=======
+# oprint new line and change
+
+>>>>>>> d53f94c (Commit)
 message_history = CassandraChatMessageHistory(
     session_id="anything",
     session=session,
